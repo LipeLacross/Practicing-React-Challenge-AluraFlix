@@ -1,101 +1,91 @@
 ## 🌐 [English Version of README](README_EN.md)
 
-# Organo
+# AluraFlix
 
-Organo é uma aplicação desenvolvida em React que permite a criação e organização de cards de colaboradores em diferentes times.
+AluraFlix é uma plataforma inspirada no Netflix, desenvolvida como parte de um projeto educacional. O objetivo é criar uma aplicação web para compartilhar e categorizar vídeos educativos, oferecendo uma interface intuitiva e responsiva.
 
 ## 🔨 Funcionalidades do Projeto
 
-- Adicionar colaboradores a times específicos.
-- Exibir times com cores personalizadas.
-- Interface responsiva e amigável.
+- **Cadastro de Vídeos**: Permite adicionar novos vídeos com categorias personalizadas.
+- **Listagem de Vídeos**: Exibição de vídeos categorizados em uma interface amigável.
+- **Modal de Confirmação**: Interface para confirmação de exclusão ou edição de itens.
+- **Filtro por Categoria**: Visualização de vídeos segmentados por categorias como Front-End, Back-End e Mobile.
 
 ### Exemplo Visual do Projeto
 
-![chrome-capture-2024-12-21](https://github.com/user-attachments/assets/91d47dad-689f-4278-a736-3252c64265ae)
+![chrome-capture-2024-12-22](https://github.com/user-attachments/assets/0c5501ab-70e8-4c0e-a559-9b10c6e08eac)
 
 ## ✔️ Técnicas e Tecnologias Utilizadas
 
-- **React** para criação de componentes e gerenciamento do estado.
-- **CSS** para estilização personalizada.
-- **HTML** para estrutura básica.
-- **JavaScript (ES6+)** para lógica e funcionalidade.
+- **React.js**: Framework para criação da interface de usuário.
+- **Vite**: Ferramenta para desenvolvimento e build rápido do projeto.
+- **CSS Modules**: Para estilização modular e escopo de componentes.
+- **Context API**: Para gerenciar estados globais.
+- **Custom Hooks**: Reaproveitamento de lógica entre componentes.
 
 ## 📁 Estrutura do Projeto
 
 - **public/**
-    - favicon.ico: Ícone do site.
-    - index.html: Arquivo HTML principal.
-    - manifest.json: Metadados do app para navegadores e PWA.
-    - robots.txt: Arquivo para direções de crawlers.
-    - **imagens/**
-        - banner.png: Banner principal do site.
-        - logo192.png: Logo em alta resolução.
-        - logo512.png: Logo maior para dispositivos.
+    - `images/`: Contém logos e ícones utilizados no projeto.
+    - `index.html`: Arquivo HTML principal que é o ponto de entrada da aplicação.
 
 - **src/**
-    - App.js: Componente principal que integra os demais.
-    - index.js: Ponto de entrada do projeto.
-    - **componentes/**
-        - **Banner/**: Componente para o banner principal.
-        - **Botao/**: Componente reutilizável para botões.
-        - **CampoTexto/**: Componente de campo de entrada de texto.
-        - **Colaborador/**: Componente que exibe informações de um colaborador.
-        - **Formulario/**: Formulário para adicionar novos colaboradores.
-        - **ListaSuspensa/**: Componente de seleção de opções.
-        - **Rodape/**: Rodapé do site.
-        - **Time/**: Componente que organiza os cards dos colaboradores.
+    - **components/**: Componentes reutilizáveis como Banner, Footer, e Header.
+    - **pages/**: Páginas específicas do projeto como Home e NewVideo.
+    - **context/**: Definições de estados globais utilizando Context API.
+    - **hooks/**: Hooks personalizados para gestão de estados e lógicas reutilizáveis.
+    - **index.css**: Estilização global.
+    - **main.jsx**: Arquivo de inicialização da aplicação.
+    - **routes.jsx**: Configuração das rotas da aplicação.
 
 ## 🛠️ Abrir e rodar o projeto
 
 Para iniciar o projeto localmente, siga os passos abaixo:
 
 1. **Certifique-se de que o Node.js está instalado**:
-    - O [Node.js](https://nodejs.org/) é necessário para rodar o projeto. Você pode verificar se já o tem instalado com:
+    - O [Node.js](https://nodejs.org/) é necessário para rodar o projeto. Verifique a versão instalada com o comando:
 
-```bash
-node -v
-```
-
-- Se não estiver instalado, baixe e instale a versão recomendada.
+      ```bash
+      node -v
+      ```
+    - Se não estiver instalado, baixe e instale a versão recomendada.
 
 2. **Clone o Repositório**:
     - Copie a URL do repositório e execute o comando abaixo no terminal:
 
-```bash
-git clone <URL_DO_REPOSITORIO>
-```
+      ```bash
+      git clone <URL_DO_REPOSITORIO>
+      ```
 
 3. **Instale as dependências**:
-    - Acesse a pasta do projeto e execute:
+    - Navegue até a pasta do projeto clonado e execute o comando:
 
-```bash
-npm install
-```
+      ```bash
+      npm install
+      ```
 
-4. **Inicie o servidor de desenvolvimento**:
-    - Para rodar o projeto, utilize o comando:
+4. **Inicie o projeto**:
+    - Rode o comando abaixo para iniciar o servidor de desenvolvimento:
 
-```bash
-npm start
-```
-
-- O projeto será iniciado em [http://localhost:3000](http://localhost:3000).
+      ```bash
+      npm run dev
+      ```
+    - Acesse o projeto pelo navegador no endereço: `http://localhost:5173`.
 
 ## 🌐 Deploy
 
-Para realizar o deploy do projeto, siga estas etapas:
+Para fazer o deploy do projeto:
 
-1. **Compile o projeto para produção**:
+1. **Gere a build de produção**:
+    - Execute o comando:
 
-```bash
-npm run build
-```
+      ```bash
+      npm run build
+      ```
 
-2. **Hospede os arquivos gerados**:
-    - Os arquivos serão gerados na pasta `build/`. Eles podem ser hospedados em serviços como [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/) ou [GitHub Pages](https://pages.github.com/).
+2. **Configure o ambiente de deploy**:
+    - Utilize plataformas como [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), ou [GitHub Pages](https://pages.github.com/) para hospedar o projeto.
 
-3. **Configure o servidor**:
-    - Certifique-se de que o servidor está configurado para servir o arquivo `index.html` para todas as rotas.
-
+3. **Envie os arquivos para o servidor**:
+    - Suba os arquivos da build para o servidor ou conecte diretamente o repositório ao serviço de deploy escolhido.
 

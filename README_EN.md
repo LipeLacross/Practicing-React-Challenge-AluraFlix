@@ -1,101 +1,90 @@
-## 🌐 [English Version of README](README_EN.md)
+## 🌐 [Versão em Português do README](README.md)
 
-# Organo
+# AluraFlix
 
-Organo is an application developed in React that allows the creation and organization of employee cards in different teams.
+AluraFlix is a platform inspired by Netflix, developed as part of an educational project. The goal is to create a web application for sharing and categorizing educational videos, offering an intuitive and responsive interface.
 
 ## 🔨 Project Features
 
-- Add employees to specific teams.
-- Display teams with custom colors.
-- Responsive and user-friendly interface.
+- **Video Registration**: Allows adding new videos with custom categories.
+- **Video Listing**: Displays categorized videos in a user-friendly interface.
+- **Confirmation Modal**: Interface for confirming item deletion or editing.
+- **Category Filter**: View videos segmented by categories such as Front-End, Back-End, and Mobile.
 
 ### Visual Example of the Project
 
-![chrome-capture-2024-12-21](https://github.com/user-attachments/assets/91d47dad-689f-4278-a736-3252c64265ae)
+![chrome-capture-2024-12-22](https://github.com/user-attachments/assets/0c5501ab-70e8-4c0e-a559-9b10c6e08eac)
 
-## ✔️ Technologies Used
+## ✔️ Techniques and Technologies Used
 
-- **React** for creating components and state management.
-- **CSS** for custom styling.
-- **HTML** for basic structure.
-- **JavaScript (ES6+)** for logic and functionality.
+- **React.js**: Framework for building the user interface.
+- **Vite**: Tool for fast project development and build.
+- **CSS Modules**: For modular styling and component scoping.
+- **Context API**: To manage global states.
+- **Custom Hooks**: Reusable logic across components.
 
 ## 📁 Project Structure
 
 - **public/**
-    - favicon.ico: Site icon.
-    - index.html: Main HTML file.
-    - manifest.json: App metadata for browsers and PWA.
-    - robots.txt: File for crawler directions.
-    - **images/**
-        - banner.png: Main site banner.
-        - logo192.png: High-resolution logo.
-        - logo512.png: Larger logo for devices.
+    - `images/`: Contains logos and icons used in the project.
+    - `index.html`: Main HTML file, which is the entry point of the application.
 
 - **src/**
-    - App.js: Main component integrating others.
-    - index.js: Entry point of the project.
-    - **components/**
-        - **Banner/**: Component for the main banner.
-        - **Button/**: Reusable button component.
-        - **TextField/**: Text input field component.
-        - **Employee/**: Component displaying an employee's information.
-        - **Form/**: Form to add new employees.
-        - **DropdownList/**: Component for option selection.
-        - **Footer/**: Site footer.
-        - **Team/**: Component organizing the employee cards.
+    - **components/**: Reusable components like Banner, Footer, and Header.
+    - **pages/**: Project-specific pages such as Home and NewVideo.
+    - **context/**: Definitions of global states using Context API.
+    - **hooks/**: Custom hooks for managing states and reusable logic.
+    - **index.css**: Global styling.
+    - **main.jsx**: Application initialization file.
+    - **routes.jsx**: Application routing configuration.
 
 ## 🛠️ Open and Run the Project
 
-To run the project locally, follow these steps:
+To start the project locally, follow the steps below:
 
-1. **Make sure Node.js is installed**:
-    - [Node.js](https://nodejs.org/) is required to run the project. You can check if it's already installed by running:
+1. **Ensure Node.js is installed**:
+    - [Node.js](https://nodejs.org/) is required to run the project. Verify the installed version with the command:
 
-```bash
-node -v
-```
-
-- If it's not installed, download and install the recommended version.
+      ```bash
+      node -v
+      ```
+    - If not installed, download and install the recommended version.
 
 2. **Clone the Repository**:
-    - Copy the repository URL and run the following command in your terminal:
+    - Copy the repository URL and execute the command below in the terminal:
 
-```bash
-git clone <REPOSITORY_URL>
-```
+      ```bash
+      git clone <REPOSITORY_URL>
+      ```
 
 3. **Install Dependencies**:
-    - Navigate to the project folder and run:
+    - Navigate to the cloned project folder and run the command:
 
-```bash
-npm install
-```
+      ```bash
+      npm install
+      ```
 
-4. **Start the Development Server**:
-    - To run the project, use the command:
+4. **Start the Project**:
+    - Run the command below to start the development server:
 
-```bash
-npm start
-```
-
-- The project will be available at [http://localhost:3000](http://localhost:3000).
+      ```bash
+      npm run dev
+      ```
+    - Access the project in your browser at: `http://localhost:5173`.
 
 ## 🌐 Deploy
 
-To deploy the project, follow these steps:
+To deploy the project:
 
-1. **Build the project for production**:
+1. **Generate the production build**:
+    - Run the command:
 
-```bash
-npm run build
-```
+      ```bash
+      npm run build
+      ```
 
-2. **Host the generated files**:
-    - The files will be generated in the `build/` folder. You can host them on services like [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), or [GitHub Pages](https://pages.github.com/).
+2. **Set up the deployment environment**:
+    - Use platforms like [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/), or [GitHub Pages](https://pages.github.com/) to host the project.
 
-3. **Configure the server**:
-    - Ensure the server is configured to serve the `index.html` file for all routes.
-```
-
+3. **Upload files to the server**:
+    - Upload the build files to the server or directly connect the repository to the chosen deployment service.
